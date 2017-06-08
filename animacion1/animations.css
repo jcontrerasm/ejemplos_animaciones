@@ -1,0 +1,40 @@
+
+* {
+  margin: 0;
+}
+
+/* fotogramas */
+
+@keyframes move-left {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+.main-container {
+  width: 100%;
+  min-width: 724px;
+  overflow: hidden;
+}
+
+.texto {
+  position: relative;
+  animation: move-left 10s linear infinite;
+}
+
+.animation-left {
+  width: 362px;
+  position: relative;
+  margin: 0;
+}
+
+.animation-right {
+  width: 362px;
+  position: relative;
+  margin: 0;
+  float: right;
+  right: -362px;
+}

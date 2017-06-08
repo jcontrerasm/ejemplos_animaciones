@@ -1,0 +1,72 @@
+
+* {
+  margin: 0;
+}
+
+/* fotogramas */
+
+@keyframes abrir-cerrar {
+  0% {
+    width: .5px;
+  }
+  25% {
+    width: 130px;
+  }
+  50% {
+    width: .5px;
+  }
+}
+
+@keyframes subir-bajar {
+  50% {
+    transform: translateY(0px);
+  }
+
+  75%{
+    transform: translateY(-380px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #B0D8EB
+}
+
+.cuerda {
+  width: 5px;
+  height: 500px;
+  background-color: #464D5A;
+}
+
+.ascensor {
+  width: 300px;
+  height: 400px;
+  background-color: #464D5A;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: subir-bajar 8s linear infinite;
+}
+
+.puerta {
+  width: .5px;
+  height: 390px;
+  background-color: #E8F5FF;
+  animation: abrir-cerrar 8s linear infinite;
+}
+
+.piso {
+  width: 500px;
+  height: 10px;
+  border-radius: 30%;
+  background-color: #464D5A;
+}
